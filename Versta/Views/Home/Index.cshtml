@@ -1,0 +1,40 @@
+﻿@model Versta.Models.OrderModel   
+ 
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<link href="@Url.Content("~/css/style.css")" rel="stylesheet" type="text/css" />
+
+<div>
+<Table>
+    <tr>
+        <th><h5>id</h5></th>
+        <th><h5>Уникальный id</h5></th>
+        <th><h5>Город отправителя</h5></th>
+        <th><h5>Адрес отправителя</h5></th>
+        <th><h5>Город получателя</h5></th>
+        <th><h5>Адрес получателя</h5></th>
+        <th><h5>Вес груза</h5></th>
+        <th><h5>Дата забора груза</h5></th>
+    </tr>
+    @foreach (var item in Model.Orders)
+    {      
+        <tr>
+            <td>@item.id</td>
+            <td>
+                <a href="@Url.Action("OrderPage", "Home", new {id = @item.id })">@item.unique_id</a>
+            </td>
+            <td>@item.city_from</td>
+            <td>@item.address_from</td>
+            <td>@item.city_to</td>
+            <td>@item.address_to</td>
+            <td>@item.weight</td>
+            <td>@item.date</td>
+        </tr>
+    }
+</Table>
+
+</div>

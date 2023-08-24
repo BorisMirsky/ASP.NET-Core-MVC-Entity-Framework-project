@@ -1,2 +1,15 @@
-# ASP.NET-MVC-Entity-Framework-ReactJS-project
-тестовый проект компании Versta24 "ASP .NET MVC, EF, C#, ReactJS, reactstrap, SQLite"
+Тестовый проект компании Versta24
+CRUD-приложение сделано на основе "Junior Разработчик C# .Net"
+https://versta24.ru/hr/testfordevjun
+
+Отличия от задания:
+1. ASP.NET 6 а не 7
+2. React вместо Vue
+
+
+Как пользоваться
+
+1. Создание БД (python): запустить f5 файл create_database.py. Созданная база появится в \Database.
+Устанавливать виртуальное окружение для python не нужно
+2. Запустить проект через Visual Studio. VS подхватит проект и сама установит версии библиотек из файла проекта.
+
