@@ -10,13 +10,6 @@ namespace Versta.Controllers
 {
     public class HomeController : Controller
     {
-        //private readonly ILogger<HomeController> _logger;
-
-        //public HomeController(ILogger<HomeController> logger)
-        //{
-        //    _logger = logger;
-        //}
-
 
         private OrderContext db;
 
@@ -48,10 +41,6 @@ namespace Versta.Controllers
         public IActionResult CreateNewOrder() 
         {
             CreateNewOrderModel model = new CreateNewOrderModel();
-            //OrderInfo? userInfo = (from usr in db.OrdersDB
-                                  //where usr.Email == User.Identity.Name
-            //                      select usr).FirstOrDefault();
-            //model.User = userInfo!;
             return View(model);
         }
 
@@ -79,7 +68,6 @@ namespace Versta.Controllers
                                             where ord.unique_id == guid 
                                         select ord).SingleOrDefault();
                 return RedirectToAction("OrderPage", new { id = orderInfo1?.id });
-                //return View(model);
             }
             else
             {

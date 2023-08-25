@@ -13,7 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 string connection = builder.Configuration.GetConnectionString("DefaultConnection");
-//UseSqlServer
+
 builder.Services.AddDbContext<OrderContext>(options => options.UseSqlite(connection));
 
 // Add services to the container.

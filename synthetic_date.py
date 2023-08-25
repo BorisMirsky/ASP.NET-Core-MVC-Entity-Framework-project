@@ -5,7 +5,7 @@ import uuid
 
 
 
-# AlabamaUS cityes list 
+# Alabama US cityes list 
 cityes = ['AlexanderCity','Andalusia','Anniston','Athens','Atmore','Auburn','Bessemer','Birmingham',
 'Chickasaw','Clanton','Cullman','Decatur','Demopolis','Dothan','Enterprise','Eufaula',
 'Florence','FortPayne','Gadsden','Greenville','Guntersville','Huntsville','Jasper','Marion',

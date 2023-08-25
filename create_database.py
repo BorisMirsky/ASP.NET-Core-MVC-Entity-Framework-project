@@ -1,15 +1,11 @@
-#import datetime
-#import random
-#from datetime import timedelta
 import sqlite3
-#import time
 from synthetic_date import *
 
 
 
 class Order:
     def __init__(self):  
-        #self.number_orders = 100       # всего заказов, чисто заполнить таблицу
+        #self.number_orders = 100       # всего заказов
         self.order_index = None       
         self.city_from = ''  
         self.address_from = ''                 
@@ -17,7 +13,7 @@ class Order:
         self.address_to = ''
         self.weight = None
         self.date = ''
-        self.database_path = "Versta/Database/OrdersDB.db"   #r"\NewOrderProject\NewOrderProject\Database\OrdersDB.db"
+        self.database_path = "Versta/Database/OrdersDB.db"
 
 
     # -------------------------database-----------------------------
@@ -65,7 +61,6 @@ class Order:
             w = generate_weight(1,100,1)
             d = generate_date()
             uniq_id = generate_unigue_id()
-            #self.index_func()
             self.insert_date_db(uniq_id, city['city_from'], address['address_from'],
                                 city['city_to'], address['address_to'], w, d)
         print('done')
