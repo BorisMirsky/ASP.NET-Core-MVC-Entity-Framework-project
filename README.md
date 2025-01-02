@@ -1,11 +1,19 @@
 Тестовое задание компании 'Versta24'.
-https://versta24.ru/hr/testfordevjun
+https://versta.io/hr/testfordevjun
 
 
-Использованные технологии
+Использованные технологии:
+
+
 ASP.NET 6
+
+
 React.JS 
+
+
 Entity Framework
+
+
 SQLite
 
 
